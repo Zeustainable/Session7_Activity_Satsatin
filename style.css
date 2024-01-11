@@ -1,0 +1,116 @@
+/* UNIVERSAL RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.card {
+  width: 100%;
+  margin: 3rem 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 1rem;
+  width: 100%;
+  background-color: #67a5fd;
+  color: white;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 25px;
+  background-color: #67a5fd;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 22%;
+  }
+}
+
+@media (max-width: 980px) {
+  h1 {
+    padding: 3rem;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: calc(100% - 10rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .card-text {
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  ul {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 40px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+}
